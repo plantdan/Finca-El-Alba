@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Playfair Display", "Georgia", "serif"],
-        body: ["Lato", "-apple-system", "sans-serif"],
+        display: ["Cormorant Garamond", "Georgia", "serif"],
+        body: ["Jost", "-apple-system", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,13 +51,21 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        forest: "hsl(var(--forest))",
-        cacao: "hsl(var(--cacao))",
-        gold: "hsl(var(--gold))",
-        parchment: {
-          DEFAULT: "hsl(var(--parchment))",
-          dark: "hsl(var(--parchment-dark))",
+        forest: {
+          DEFAULT: "hsl(var(--forest))",
+          light: "hsl(var(--forest-light))",
         },
+        cacao: {
+          DEFAULT: "hsl(var(--cacao))",
+          light: "hsl(var(--cacao-light))",
+        },
+        clay: "hsl(var(--clay))",
+        sunrise: {
+          DEFAULT: "hsl(var(--sunrise))",
+          soft: "hsl(var(--sunrise-soft))",
+        },
+        dawn: "hsl(var(--dawn))",
+        earth: "hsl(var(--earth))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -83,15 +91,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "fade-up": {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-up": "fade-up 0.8s ease-out forwards",
       },
     },
   },
