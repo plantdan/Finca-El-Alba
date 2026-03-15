@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const Footer = () => {
   return (
