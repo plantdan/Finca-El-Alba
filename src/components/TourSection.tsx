@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Clock, Users, TreePine, MapPin } from "lucide-react";
 import farmTour from "@/assets/farm-tour.jpg";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const TourSection = () => {
   return (
