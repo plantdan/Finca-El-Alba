@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import cacaoIcon from "@/assets/cacao-icon.png";
 
 const navLinks = [
   { label: "Our Story", href: "#story" },
@@ -30,11 +31,18 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-5 px-6">
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center gap-3">
+          <img
+            src={cacaoIcon}
+            alt=""
+            className={`h-8 md:h-9 w-auto transition-all duration-500 ${
+              scrolled ? "" : "brightness-0 invert"
+            }`}
+          />
           <img
             src={logo}
             alt="Finca El Alba"
-            className={`h-10 md:h-12 w-auto transition-all duration-500 ${
+            className={`h-8 md:h-10 w-auto transition-all duration-500 ${
               scrolled ? "" : "brightness-0 invert"
             }`}
           />
