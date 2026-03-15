@@ -16,7 +16,7 @@ const Footer = () => {
             className="grid md:grid-cols-2 gap-16"
           >
             <div>
-              <div className="w-10 h-px bg-sunrise mb-8" />
+              <CacaoDivider inverted />
               <h2 className="font-display text-4xl md:text-5xl font-light leading-[1.1] mb-6">
                 Get in <span className="italic">Touch</span>
               </h2>

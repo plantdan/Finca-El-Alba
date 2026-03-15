@@ -52,7 +52,7 @@ const ForestSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.15 }}
           >
-            <div className="w-10 h-px bg-sunrise mb-8" />
+            <CacaoDivider inverted />
             <p className="font-body text-[11px] tracking-[0.5em] uppercase text-sunrise font-medium mb-5">
               The Living Forest
             </p>
