@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Leaf, Droplets, TreePine, Shield } from "lucide-react";
 import agroforestry from "@/assets/agroforestry.jpg";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const principles = [
   {
