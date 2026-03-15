@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import cacaoIcon from "@/assets/cacao-icon.png";
 
 const navLinks = [
   { label: "Our Story", href: "#story" },
