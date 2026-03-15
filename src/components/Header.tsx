@@ -5,12 +5,12 @@ import logo from "@/assets/logo.png";
 import cacaoIcon from "@/assets/cacao-icon.png";
 
 const navLinks = [
-  { label: "Our Story", href: "#story" },
-  { label: "The Forest", href: "#forest" },
-  { label: "Our Cacao", href: "#cacao" },
-  { label: "Farm Tour", href: "#tour" },
-  { label: "Contact", href: "#contact" },
-];
+{ label: "Our Story", href: "#story" },
+{ label: "The Forest", href: "#forest" },
+{ label: "Our Cacao", href: "#cacao" },
+{ label: "Farm Tour", href: "#tour" },
+{ label: "Contact", href: "#contact" }];
+
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,78 +25,78 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-        scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-[var(--shadow-soft)]"
-          : "bg-transparent"
-      }`}
-    >
+      scrolled ?
+      "bg-background/95 backdrop-blur-md shadow-[var(--shadow-soft)]" :
+      "bg-transparent"}`
+      }>
+      
       <div className="container mx-auto flex items-center justify-between py-5 px-6">
         <a href="#" className="flex items-center gap-3">
           <img
             src={cacaoIcon}
             alt=""
             className={`h-8 md:h-9 w-auto transition-all duration-500 ${
-              scrolled ? "" : "brightness-0 invert"
-            }`}
-          />
-          <img
-            src={logo}
-            alt="Finca El Alba"
-            className={`h-8 md:h-10 w-auto transition-all duration-500 ${
-              scrolled ? "" : "brightness-0 invert"
-            }`}
-          />
+            scrolled ? "" : "brightness-0 invert"}`
+            } />
+          
+          
+
+
+
+
+
+          
         </a>
 
         <nav className="hidden lg:flex items-center gap-10">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`font-body text-[13px] tracking-[0.15em] uppercase font-light transition-colors duration-300 hover:text-sunrise ${
-                scrolled ? "text-foreground" : "text-primary-foreground/90"
-              }`}
-            >
+          {navLinks.map((link) =>
+          <a
+            key={link.href}
+            href={link.href}
+            className={`font-body text-[13px] tracking-[0.15em] uppercase font-light transition-colors duration-300 hover:text-sunrise ${
+            scrolled ? "text-foreground" : "text-primary-foreground/90"}`
+            }>
+            
               {link.label}
             </a>
-          ))}
+          )}
         </nav>
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className={`lg:hidden transition-colors ${
-            scrolled ? "text-foreground" : "text-primary-foreground"
-          }`}
-        >
+          scrolled ? "text-foreground" : "text-primary-foreground"}`
+          }>
+          
           {mobileOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
 
       <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background/98 backdrop-blur-md border-t border-border"
-          >
+        {mobileOpen &&
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          className="lg:hidden bg-background/98 backdrop-blur-md border-t border-border">
+          
             <nav className="flex flex-col items-center gap-6 py-10">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="font-body text-[13px] tracking-[0.15em] uppercase font-light text-foreground hover:text-sunrise transition-colors"
-                >
+              {navLinks.map((link) =>
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className="font-body text-[13px] tracking-[0.15em] uppercase font-light text-foreground hover:text-sunrise transition-colors">
+              
                   {link.label}
                 </a>
-              ))}
+            )}
             </nav>
           </motion.div>
-        )}
+        }
       </AnimatePresence>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Header;
