@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import cacaoPods from "@/assets/cacao-pods-alba.jpg";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const StorySection = () => {
   return (
