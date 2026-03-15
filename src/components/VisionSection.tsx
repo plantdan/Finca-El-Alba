@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const VisionSection = () => {
   return (
