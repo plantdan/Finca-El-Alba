@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-alba.jpg";
+import titleImage from "@/assets/finca-el-alba-title.png";
 import CacaoDivider from "@/components/CacaoDivider";
 
 const HeroSection = () => {
