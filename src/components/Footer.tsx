@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logo from "@/assets/logo.png";
+import footerLogo from "@/assets/finca-el-alba-footer.png";
 import CacaoDivider from "@/components/CacaoDivider";
 
 const Footer = () => {
