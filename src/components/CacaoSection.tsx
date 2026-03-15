@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import fermentation from "@/assets/fermentation.jpg";
 import dryingBeds from "@/assets/drying-beds.jpg";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const CacaoSection = () => {
   return (
