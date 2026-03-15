@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Our Story", href: "#story" },
@@ -29,21 +30,14 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-5 px-6">
-        <a href="#" className="flex flex-col">
-          <span
-            className={`font-display text-2xl md:text-3xl font-light tracking-[0.15em] transition-colors duration-500 ${
-              scrolled ? "text-primary" : "text-primary-foreground"
+        <a href="#" className="flex items-center">
+          <img
+            src={logo}
+            alt="Finca El Alba"
+            className={`h-10 md:h-12 w-auto transition-all duration-500 ${
+              scrolled ? "" : "brightness-0 invert"
             }`}
-          >
-            Finca El Alba
-          </span>
-          <span
-            className={`font-body text-[9px] tracking-[0.5em] uppercase font-light transition-colors duration-500 ${
-              scrolled ? "text-clay" : "text-primary-foreground/60"
-            }`}
-          >
-            Regenerative Cacao · Costa Rica
-          </span>
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-10">
