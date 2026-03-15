@@ -28,16 +28,14 @@ const HeroSection = () => {
           </p>
         </motion.div>
 
-        <motion.h1
+        <motion.img
+          src={titleImage}
+          alt="Finca El Alba"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.6 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-primary-foreground leading-[0.9] mb-6 tracking-wide"
-        >
-          Finca
-          <br />
-          <span className="italic">El Alba</span>
-        </motion.h1>
+          className="max-w-md md:max-w-lg lg:max-w-2xl w-full mx-auto mb-6"
+        />
 
         <motion.p
           initial={{ opacity: 0 }}
