@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import fermentation from "@/assets/fermentation.jpg";
 import dryingBeds from "@/assets/drying-beds.jpg";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const CacaoSection = () => {
   return (
@@ -14,7 +15,7 @@ const CacaoSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-2xl mb-20"
         >
-          <div className="w-10 h-px bg-sunrise mb-8" />
+          <CacaoDivider />
           <p className="font-body text-[11px] tracking-[0.5em] uppercase text-sunrise font-medium mb-5">
             Fine Flavor Cacao
           </p>

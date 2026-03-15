@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import cacaoPods from "@/assets/cacao-pods-alba.jpg";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const StorySection = () => {
   return (
@@ -13,7 +14,7 @@ const StorySection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1 }}
           >
-            <div className="w-10 h-px bg-sunrise mb-8" />
+            <CacaoDivider />
             <p className="font-body text-[11px] tracking-[0.5em] uppercase text-sunrise font-medium mb-5">
               Our Story
             </p>

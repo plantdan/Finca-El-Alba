@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const VisionSection = () => {
   return (
@@ -11,7 +12,7 @@ const VisionSection = () => {
           transition={{ duration: 1 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <div className="w-10 h-px bg-sunrise mx-auto mb-8" />
+          <CacaoDivider inverted className="mx-auto" />
           <p className="font-body text-[11px] tracking-[0.5em] uppercase text-sunrise font-medium mb-8">
             Our Vision
           </p>

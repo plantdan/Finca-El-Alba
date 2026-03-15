@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-alba.jpg";
+import CacaoDivider from "@/components/CacaoDivider";
 
 const HeroSection = () => {
   return (
@@ -20,7 +21,7 @@ const HeroSection = () => {
           transition={{ duration: 1.2, delay: 0.3 }}
           className="mb-8"
         >
-          <div className="w-12 h-px bg-sunrise mx-auto mb-6" />
+          <CacaoDivider inverted className="mx-auto" />
           <p className="font-body text-[11px] tracking-[0.6em] uppercase text-primary-foreground/60 font-light">
             Cutris · San Carlos · Costa Rica
           </p>
