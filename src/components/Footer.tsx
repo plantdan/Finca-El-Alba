@@ -67,7 +67,7 @@ const Footer = () => {
       <div className="py-8">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <span className="font-display text-lg font-light tracking-[0.1em]">Finca El Alba</span>
+            <img src={logo} alt="Finca El Alba" className="h-8 w-auto brightness-0 invert" />
           </div>
           <p className="font-body text-[11px] text-primary-foreground/30 tracking-wider">
             © {new Date().getFullYear()} Finca El Alba · Cutris, San Carlos, Costa Rica
