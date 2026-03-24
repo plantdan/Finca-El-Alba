@@ -41,7 +41,7 @@ const Footer = () => {
                 <h4 className="font-body text-[10px] tracking-[0.5em] uppercase text-sunrise font-medium mb-3">
                   Inquiries
                 </h4>
-                
+                <a
                   href="mailto:daniel@fincaelalba.cr"
                   className="font-body text-[15px] font-light text-primary-foreground/70 hover:text-sunrise transition-colors"
                 >
