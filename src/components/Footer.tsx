@@ -23,10 +23,9 @@ const Footer = () => {
               <p className="font-body text-[15px] font-light text-primary-foreground/60 leading-[1.85] max-w-md">
                 Whether you're a chocolate maker looking for exceptional single-origin cacao, 
                 a visitor wanting to experience our farm, or someone who shares our vision for 
-                regenerative agriculture — we'd love to hear from you.
+                regenerative agriculture; we'd love to hear from you!
               </p>
             </div>
-
             <div className="space-y-8">
               <div>
                 <h4 className="font-body text-[10px] tracking-[0.5em] uppercase text-sunrise font-medium mb-3">
@@ -42,11 +41,11 @@ const Footer = () => {
                 <h4 className="font-body text-[10px] tracking-[0.5em] uppercase text-sunrise font-medium mb-3">
                   Inquiries
                 </h4>
-                <a
-                  href="mailto:info@fincaelalba.com"
+                
+                  href="mailto:daniel@fincaelalba.cr"
                   className="font-body text-[15px] font-light text-primary-foreground/70 hover:text-sunrise transition-colors"
                 >
-                  info@fincaelalba.com
+                  daniel@fincaelalba.cr
                 </a>
               </div>
               <div>
@@ -63,7 +62,6 @@ const Footer = () => {
           </motion.div>
         </div>
       </div>
-
       {/* Bottom bar */}
       <div className="py-8">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
