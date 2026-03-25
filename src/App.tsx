@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound.tsx";
 const queryClient = new QueryClient();
 
 const WhatsAppButton = () => (
-  
+  <a
     href="https://wa.me/50688542570"
     target="_blank"
     rel="noopener noreferrer"
