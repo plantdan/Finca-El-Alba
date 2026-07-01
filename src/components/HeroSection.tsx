@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-alba.jpg";
+import heroImage from "@/assets/PanofarmDrone.jpg";
 import titleImage from "@/assets/finca-el-alba-title.png";
 import CacaoDivider from "@/components/CacaoDivider";
 
